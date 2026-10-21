@@ -1,0 +1,6 @@
+# Format du lore qui sera ajouté aux items.
+# %value% sera remplacé par la valeur du bloc.
+lore-text: "&8%value% Niv. d'île"
+
+# Chemin vers le fichier de valeurs de SuperiorSkyblock2, relatif au dossier principal du serveur.
+superior-skyblock-values-path: "plugins/SuperiorSkyblock2/block-values/levels.yml"
