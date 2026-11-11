@@ -22,13 +22,29 @@ Utilisé sur : **Opale**.
 
 - Obligatoires : `ProtocolLib`
 
+## Commandes
+
+| Commande | Alias | Description | Permission |
+|---|---|---|---|
+| `/shlorevalue reload` | — | Recharge `config.yml`, `messages.yml` et le fichier de valeurs de SuperiorSkyblock2 (console comprise). Si l'un est absent ou invalide, rien ne change et le message donne le fichier et l'erreur. Un inventaire déjà ouvert garde son ancien lore jusqu'à son prochain rafraîchissement. | `shlorevalue.admin.reload` |
+
+`/shlorevalue` sans argument donne une ligne d'usage limitée aux sous-commandes autorisées.
+
+## Permissions
+
+| Permission | Description | Par défaut |
+|---|---|---|
+| `shlorevalue.admin` | Toutes les sous-commandes d'administration (parent de `shlorevalue.admin.reload`). | `op` |
+| `shlorevalue.admin.reload` | `/shlorevalue reload` | `op` |
+
 ## Configuration
 
 Fichiers par défaut repris du serveur (secrets remplacés par `CHANGE_ME`). Cliquez sur un fichier pour l'ouvrir :
 
 <pre>
 plugins/SHLoreValue/
-└── <a href="src/main/resources/config.yml">config.yml</a>
+├── <a href="src/main/resources/config.yml">config.yml</a>     format du lore, chemin du fichier de valeurs de SuperiorSkyblock2
+└── <a href="src/main/resources/messages.yml">messages.yml</a>   messages de la commande
 </pre>
 
 ## Compilation

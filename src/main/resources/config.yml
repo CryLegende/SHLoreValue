@@ -1,3 +1,23 @@
+# ======================================================================== #
+#                       SHLoreValue - Configuration                        #
+# ======================================================================== #
+#
+# Plugin : ajoute dans le lore des items leur valeur en niveau d'île SuperiorSkyblock2, côté client seulement
+# (ProtocolLib) : l'item du serveur n'est jamais modifié, et un item qui a déjà un lore n'est pas touché.
+# Les valeurs viennent du fichier de blocs de SuperiorSkyblock2 (superior-skyblock-values-path).
+# Les textes des commandes sont dans messages.yml.
+#
+# Commande (racine /shlorevalue, pas d'alias) :
+#   /shlorevalue reload   Recharge config.yml, messages.yml et le fichier de valeurs de SuperiorSkyblock2 (console
+#                         comprise). Si l'un est absent ou invalide, rien ne change et le message donne le fichier et
+#                         l'erreur. Un inventaire déjà ouvert garde son ancien lore jusqu'à son prochain rafraîchissement.
+#
+# Permissions (op par défaut) :
+#   shlorevalue.admin          Toutes les sous-commandes.
+#   shlorevalue.admin.reload   /shlorevalue reload
+#
+# ======================================================================== #
+
 # Format du lore qui sera ajouté aux items.
 # %value% sera remplacé par la valeur du bloc.
 lore-text: "&8%value% Niv. d'île"
